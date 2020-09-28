@@ -14,12 +14,12 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     final
     ActivityRepo activityRepo;
 
     @Autowired
-    public GreetingController(ActivityRepo activityRepo) {
+    public MainController(ActivityRepo activityRepo) {
         this.activityRepo = activityRepo;
     }
 
