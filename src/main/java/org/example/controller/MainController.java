@@ -1,17 +1,13 @@
 package org.example.controller;
 
 import org.example.domain.Activity;
+import org.example.repos.ActivityRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.example.repos.ActivityRepo;
-import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -27,14 +23,14 @@ public class MainController {
     }
 
     @GetMapping("/main")
-    public String main(Map<String,Object>  model) {
+    public String main(Map<String, Object> model) {
         Iterable<Activity> all = activityRepo.findAll();
         model.put("activities", all);
         return "main";
     }
 
     @PostMapping("/main")
-    public String add(@RequestParam String text, @RequestParam String tag, Map<String,Object> model) {
+    public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
         Activity activity = new Activity(text, tag);
         activityRepo.save(activity);
         Iterable<Activity> all = activityRepo.findAll();
