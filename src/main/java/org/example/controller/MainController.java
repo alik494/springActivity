@@ -3,6 +3,7 @@ package org.example.controller;
 import org.example.domain.Activity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,28 +16,25 @@ import java.util.Map;
 
 @Controller
 public class MainController {
-    final
-    ActivityRepo activityRepo;
 
     @Autowired
-    public MainController(ActivityRepo activityRepo) {
-        this.activityRepo = activityRepo;
-    }
+    ActivityRepo activityRepo;
+
 
     @GetMapping("/")
-    public String greeting(Map<String, Object> model) {
+    public String greeting() {
         return "greeting";
     }
 
     @GetMapping("/main")
-    public String main(Map<String, Object> model) {
+    public String main(Map<String,Object>  model) {
         Iterable<Activity> all = activityRepo.findAll();
         model.put("activities", all);
         return "main";
     }
 
     @PostMapping("/main")
-    public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
+    public String add(@RequestParam String text, @RequestParam String tag, Map<String,Object> model) {
         Activity activity = new Activity(text, tag);
         activityRepo.save(activity);
         Iterable<Activity> all = activityRepo.findAll();
