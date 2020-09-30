@@ -5,7 +5,7 @@
     <input type="submit" value="Sign Out"/>
 </form>
 <div>
-    <form method="post">
+    <form method="post" action="addAct">
         <input type="text" name="text" placeholder="введите текст">
         <input type="tag" name="tag" placeholder="Тег">
         <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
@@ -29,6 +29,7 @@
             <td>
                 {{id}}
                 {{text}}
+                {{authorName}}
             </td>
         </tr>
     {{/activities}}
