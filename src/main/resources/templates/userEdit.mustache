@@ -1,0 +1,33 @@
+<html>
+<body>
+<form method="post" action="/user">
+    <input type="text" name="userName" value={{username}}>
+    <div>
+        <label>
+            <input type="checkbox" name={role}>
+        </label>
+
+    </div>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <button type="submit">найти по юзеру</button>
+</form>
+
+<div>Список Активностей</div>
+<table>
+    <tr>
+        <th>id</th>
+        <th>text</th>
+    </tr>
+<!--    {{#activities}}-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                {{id}}-->
+<!--                {{text}}-->
+<!--                {{Usernames}}-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    {{/activities}}-->
+
+</table>
+</body>
+</html>

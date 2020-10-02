@@ -2,6 +2,8 @@ package org.example.domain;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Activity {
@@ -11,21 +13,45 @@ public class Activity {
 
     private String text;
     private String tag;
-    @ManyToOne(fetch = FetchType.EAGER)
+    private boolean activeAct;
+
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
-    private User author;
+    private List<User> users =new ArrayList<>();
 
 
     public Activity() {
     }
 
-    public Activity(String text, String tag, User user) {
+
+    public boolean isActiveAct() {
+        return activeAct;
+    }
+
+    public void setActiveAct(boolean activeAct) {
+        this.activeAct = activeAct;
+    }
+
+
+    public Activity(String text, String tag, List <User> users) {
         this.text = text;
         this.tag = tag;
-        this.author = user;
+        this.users=users;
+        this.activeAct=false;
     }
-    public String getAuthorName(){
-        return author!=null?author.getUsername():"none";
+
+
+    public String getUsernames(){
+
+        if (users !=null){
+            StringBuilder sb=new StringBuilder();
+            for (User user:users){
+                sb.append(user.getUsername());
+            }
+          return   sb.toString();
+        }
+        return "none";
+
     }
     public Integer getId() {
         return id;
@@ -51,11 +77,11 @@ public class Activity {
         this.tag = tag;
     }
 
-    public User getAuthor() {
-        return author;
+    public List<User> getUsers() {
+        return users;
     }
 
-    public void setAuthor(User user) {
-        this.author = user;
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }

@@ -9,9 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.persistence.CollectionTable;
 import java.util.Collections;
-import java.util.Map;
+
 @Controller
 public class RegistrationController {
 
@@ -35,7 +34,7 @@ public class RegistrationController {
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
         userRepo.save(user);
-        return "login";
+        return "login.ftlh";
     }
 
 }
