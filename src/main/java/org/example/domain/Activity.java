@@ -46,7 +46,7 @@ public class Activity {
         if (users !=null){
             StringBuilder sb=new StringBuilder();
             for (User user:users){
-                sb.append(user.getUsername());
+                sb.append(user.getUsername()).append(" ");
             }
           return   sb.toString();
         }

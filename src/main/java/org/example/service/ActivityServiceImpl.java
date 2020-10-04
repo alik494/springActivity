@@ -3,6 +3,7 @@ package org.example.service;
 import org.example.domain.Activity;
 import org.example.domain.User;
 import org.example.repos.ActivityRepo;
+import org.example.service.interfaces.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class ActivityService {
+public class ActivityServiceImpl implements ActivityService {
     @Autowired
     ActivityRepo activityRepo;
 

@@ -4,8 +4,10 @@ import org.example.domain.Activity;
 import org.example.domain.User;
 import org.example.repos.ActivityRepo;
 import org.example.repos.UserRepo;
-import org.example.service.ActivityService;
-import org.example.service.UserService;
+import org.example.service.ActivityServiceImpl;
+import org.example.service.UserServiceImpl;
+import org.example.service.interfaces.ActivityService;
+import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -31,7 +33,7 @@ public class MainController {
     UserService userService;
 
 
-    @GetMapping("/")
+    @GetMapping
     public String greeting() {
         return "greeting";
     }
@@ -69,7 +71,8 @@ public class MainController {
         List <User>userList=new ArrayList<>();
         if (additionalUser != null && !additionalUser.isEmpty()) {
             userList.add(user);
-            userList.add(userService.findUserByUsername(additionalUser));
+            if (!user.getUsername().equals(additionalUser)){
+            userList.add(userService.findUserByUsername(additionalUser));}
             activityService.addNewActByUser(text, tag,userList );
             activityService.showAllActivities(model);
             return "redirect:/main";
