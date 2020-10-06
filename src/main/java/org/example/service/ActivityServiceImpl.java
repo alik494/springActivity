@@ -16,13 +16,38 @@ public class ActivityServiceImpl implements ActivityService {
     @Autowired
     ActivityRepo activityRepo;
 
-    public void showAllActivities(Map<String, Object> model){
-        Iterable<Activity> all = activityRepo.findAll();
-        model.put("activities", all);
+    public Iterable<Activity> showAllActivities(){
+        return activityRepo.findAll();
     }
 
-    public void addNewActByUser(String text, String tag, List<User> userList) {
-        Activity activity = new Activity(text, tag, userList);
+    @Override
+    public Iterable <Activity> showAllUserActivities(User user) {
+        return activityRepo.findActivityByUsers(user);
+    }
+
+    @Override
+    public Iterable<Activity> showAllActiveUserActivities(User user) {
+        return activityRepo.findActivityByUsersAndActiveActIsTrue(user);
+    }
+
+    @Override
+    public Iterable<Activity> showAllNotActiveUserActivities(User user) {
+        return activityRepo.findActivityByUsersAndActiveActIsFalse(user);
+    }
+
+    @Override
+    public void setTimeActivityById(Integer id,Integer time) {
+        Activity activity=activityRepo.findActivityById(id);
+        activity.setTime(time);
+        activity.setActiveAct(false);
         activityRepo.save(activity);
+    }
+
+
+    public void addNewActByUser(String text, String tag, List<User> userList) {
+        Activity activity=new Activity(text, tag, userList);
+        activity.setTime(0);
+        activityRepo.save(activity);
+
     }
 }

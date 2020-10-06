@@ -2,54 +2,70 @@ package org.example.controller;
 
 import org.example.domain.Role;
 import org.example.domain.User;
-import org.example.repos.UserRepo;
+import org.example.service.interfaces.ActivityService;
+import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/user")
-@PreAuthorize("hasAuthority('ADMIN')")
 public class UserController {
+
     @Autowired
-    private UserRepo userRepo;
+    ActivityService activityService;
+    @Autowired
+    UserService userService;
 
-    @GetMapping
-    public String userList(Map<String, Object> model) {
-        model.put("users", userRepo.findAll());
-        return "userList";
-    }
-
-    @GetMapping("{user}")
-    public String userEditForm(@PathVariable User user, Map<String, Object> model) {
+    @GetMapping("user" + "{user}")
+    public String userForm(
+            @PathVariable User user,
+            Map<String, Object> model) {
         model.put("user", user);
-        model.put("roles", Role.values());
-        return "userEdit";
+        model.put("activities", activityService.showAllActiveUserActivities(user));
+        return "userCab";
     }
 
-    @PostMapping
-    public String userSave(
-            @RequestParam String username,
-            @RequestParam Map<String, String> form,
-            @RequestParam("userId") User user) {
-        user.setUsername(username);
-        Set<String> roles = Arrays.stream(Role.values())
-                .map(Role::name)
-                .collect(Collectors.toSet());
-        user.getRoles().clear();
-        for (String key : form.keySet()) {
-            if (roles.contains(key)) {
-                user.getRoles().add(Role.valueOf(key));
-            }
+    @PostMapping("/showNotActiveActivities")
+    public String showNotActive(
+            @AuthenticationPrincipal User user,
+            Map<String, Object> model) {
+        model.put("user", user);
+        model.put("activities", activityService.showAllNotActiveUserActivities(user));
+        return "userCab";
+    }
+
+    @PostMapping("/addAct")
+    public String add(
+            @AuthenticationPrincipal User user,
+            @RequestParam String text,
+            @RequestParam String tag,
+            @RequestParam String additionalUser,
+            Map<String, Object> model) {
+        List<User> userList = new ArrayList<>();
+        if (additionalUser != null && !additionalUser.isEmpty() && !user.getUsername().equals(additionalUser)) {
+            userList.add(userService.findUserByUsername(additionalUser));
         }
-        userRepo.save(user);
-        return "redirect:/user";
+        userList.add(user);
+        activityService.addNewActByUser(text, tag, userList);
+        return "redirect:/user" + user.getId();
+    }
+
+    @PostMapping("/sendTime")
+    public String sendTime(
+            @AuthenticationPrincipal User user,
+            @RequestParam Integer time,
+            @RequestParam Integer activityId,
+            Map<String, Object> model) {
+        activityService.setTimeActivityById(activityId, time);
+        return "redirect:/user" + user.getId();
     }
 
 

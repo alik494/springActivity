@@ -9,5 +9,8 @@ import java.util.List;
 public interface ActivityRepo extends CrudRepository<Activity,Long> {
         List <Activity> findActivityByTag(String tag);
         List <Activity> findActivityByUsers(User user);
+        List <Activity> findActivityByUsersAndActiveActIsTrue(User user);
+        List <Activity> findActivityByUsersAndActiveActIsFalse(User user);
+        Activity findActivityById(Integer id);
 
 }

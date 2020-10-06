@@ -1,6 +1,6 @@
 <#import "parts/common.ftlh" as c>
 <@c.page>
-    <form action="/user"  method="post" >
+    <form action="/adminCab"  method="post" >
         <input type="text" name="username" value="${user.username}">
         <#list roles as role>
 

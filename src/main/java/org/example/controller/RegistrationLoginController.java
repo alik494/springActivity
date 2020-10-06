@@ -5,7 +5,7 @@ import org.example.domain.Role;
 import org.example.domain.User;
 import org.example.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,23 +21,27 @@ public class RegistrationLoginController {
     private UserRepo userRepo;
 
     @GetMapping("/login")
-    public String login(Map <String,Object> model
+    public String login(
+            @AuthenticationPrincipal User user,
+            Map<String, Object> model
     ) {
+        if (user!=null){
+            return "greeting";
+        }
         model.put("messages", "Please log in");
         return "login";
     }
 
     @GetMapping("/registration")
-    public String registration(Map <String,Object> model
+    public String registration(Map<String, Object> model
     ) {
         model.put("messages", "Add new user");
         return "registration";
     }
 
 
-
     @PostMapping("/registration")
-    public String addUser(User user, Map <String,Object> model) {
+    public String addUser(User user, Map<String, Object> model) {
         User userFromDb = userRepo.findByUsername(user.getUsername());
 
         if (userFromDb != null) {

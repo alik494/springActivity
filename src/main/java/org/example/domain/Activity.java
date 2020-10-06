@@ -18,11 +18,18 @@ public class Activity {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private List<User> users =new ArrayList<>();
-
+    private Integer time;
 
     public Activity() {
     }
 
+    public Integer getTime() {
+        return time;
+    }
+
+    public void setTime(Integer time) {
+        this.time = time;
+    }
 
     public boolean isActiveAct() {
         return activeAct;

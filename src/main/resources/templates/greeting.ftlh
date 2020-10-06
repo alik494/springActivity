@@ -3,4 +3,5 @@
     <div>Hello,User</div>
     <a href="/main">Main paige</a>
     <a href="/login">login</a>
+    <a href="/registration">registration</a>
 </@c.page>

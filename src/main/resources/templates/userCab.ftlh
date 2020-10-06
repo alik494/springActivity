@@ -1,11 +1,18 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/loginPart.ftlh" as l>
-<@c.page>
-   <div>
-       <@l.logout/>
 
-   </div>
-    <span><a href="/adminCab">user List</a> </span>
+<@c.page>
+
+    <@l.logout/>
+
+
+<#--    <form action="/userCab"  method="post" >-->
+<#--        <input type="text" name="username" value="${user.username}">-->
+<#--      -->
+<#--        <input type="hidden" value="${user.id}" name="userId" />-->
+<#--        <input type="hidden" name="_csrf" value="${_csrf.token}"/>-->
+<#--        <button type="submit">изменить</button>-->
+<#--    </form>-->
 
     <div>
         <form method="post" action="addAct">
@@ -16,25 +23,16 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
-    <form method="get" action="/main">
-        <input type="text" name="filter" placeholder="введите текст">
+    <form method="post" action="showNotActiveActivities">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-
-        <button type="submit">найти по тегу</button>
+        <button type="submit">Посмотреть не активные</button>
     </form>
-
-    <form method="post" action="filterByUser">
-        <input type="text" name="userName" placeholder="введите текст">
-        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <button type="submit">найти по юзеру</button>
-    </form>
-
-    <div>Список Активностей</div>
     <table>
         <tr>
             <th>id</th>
             <th>text</th>
             <th>tag</th>
+            <th>time</th>
             <th>usernames</th>
         </tr>
         <#list activities as activity>
@@ -42,7 +40,16 @@
                 <td>                ${activity.id}            </td>
                 <td>                ${activity.text}            </td>
                 <td>                ${activity.tag}            </td>
+                <td>                ${activity.time}            </td>
                 <td><#list activity.users as user > ${user.username}<#sep>, </#list></td>
+                <td>
+                    <form method="post" action="sendTime">
+                        <input type="text" name="time" placeholder="введите текст">
+                        <input type="hidden" value=" ${activity.id}  " name="activityId">
+                        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                        <button type="submit">потрченое время</button>
+                    </form>
+                </td>
             </tr>
         <#else >
             no rec
