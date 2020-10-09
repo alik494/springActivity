@@ -5,5 +5,5 @@
 
     ${messages}
 </div>
-    <@l.login "/registration" false/>
+    <@l.login "/registration" true/>
 </@c.page>

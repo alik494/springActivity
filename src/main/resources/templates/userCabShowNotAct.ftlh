@@ -17,7 +17,7 @@
         <button type="submit">Посмотреть не активные</button>
     </form>
 
-    <@a.userAct true/>
+    <@a.userAct false/>
 
 
 </@c.page>

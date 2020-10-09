@@ -2,6 +2,7 @@ package org.example.domain;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,17 +11,28 @@ public class Activity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
+    @NotNull
     private String text;
     private String tag;
     private boolean activeAct;
+    private boolean archiveAct;
+
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private List<User> users =new ArrayList<>();
+
     private Integer time;
 
     public Activity() {
+    }
+
+    public boolean isArchiveAct() {
+        return archiveAct;
+    }
+
+    public void setArchiveAct(boolean archiveAct) {
+        this.archiveAct = archiveAct;
     }
 
     public Integer getTime() {

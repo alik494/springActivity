@@ -1,7 +1,7 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/loginPart.ftlh" as l>
 <@c.page>
-    <@l.logout/>
+
     <div>Список Users</div>
     <table>
         <thead>

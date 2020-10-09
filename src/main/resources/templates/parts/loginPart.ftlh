@@ -8,15 +8,16 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label"> User Name :</label>
+            <label class="col-sm-2 col-form-label"> Password:</label>
             <div class="col-sm-5">
                 <input type="password" name="password" class="form-control" placeholder="Password"/>
             </div>
         </div>
 
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <#if !isRegisterForm     ><a href="/registration">Add new user</a></#if>
         <button type="submit" class="btn btn-primary"><#if isRegisterForm>Create<#else>Sign in</#if></button>
+        <#if !isRegisterForm     ><a href="/registration">Add new user</a></#if>
+
     </form>
 </#macro>
 
@@ -24,7 +25,7 @@
 
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-<#--        <input type="submit" value="Sign Out"/>-->
+
         <button type="submit" class="btn btn-primary">Sign out</button>
     </form>
 </#macro>

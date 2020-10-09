@@ -1,6 +1,5 @@
 package org.example.controller;
 
-import org.example.domain.Role;
 import org.example.domain.User;
 import org.example.service.interfaces.ActivityService;
 import org.example.service.interfaces.UserService;
@@ -29,17 +28,17 @@ public class UserController {
             @PathVariable User user,
             Map<String, Object> model) {
         model.put("user", user);
-        model.put("activities", activityService.showAllActiveUserActivities(user));
+        model.put("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
         return "userCab";
     }
 
-    @PostMapping("/showNotActiveActivities")
+    @GetMapping("/showNotActiveActivities")
     public String showNotActive(
             @AuthenticationPrincipal User user,
             Map<String, Object> model) {
         model.put("user", user);
         model.put("activities", activityService.showAllNotActiveUserActivities(user));
-        return "userCab";
+        return "userCabShowNotAct";
     }
 
     @PostMapping("/addAct")
@@ -47,8 +46,7 @@ public class UserController {
             @AuthenticationPrincipal User user,
             @RequestParam String text,
             @RequestParam String tag,
-            @RequestParam String additionalUser,
-            Map<String, Object> model) {
+            @RequestParam String additionalUser) {
         List<User> userList = new ArrayList<>();
         if (additionalUser != null && !additionalUser.isEmpty() && !user.getUsername().equals(additionalUser)) {
             userList.add(userService.findUserByUsername(additionalUser));

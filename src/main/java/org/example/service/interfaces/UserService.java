@@ -9,5 +9,9 @@ public interface UserService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException ;
 
     public User findUserByUsername(String username);
+    public boolean addUser(User user);
+    public boolean updateUser(User user);
+
+    public Iterable<User> showAllUsers();
 
 }

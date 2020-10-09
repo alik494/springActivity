@@ -1,10 +1,13 @@
 package org.example.controller;
 
+import org.example.domain.Activity;
 import org.example.domain.Role;
 import org.example.domain.User;
-import org.example.repos.UserRepo;
+import org.example.service.interfaces.ActivityService;
+import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,19 +21,65 @@ import java.util.stream.Collectors;
 @PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
     @Autowired
-    private UserRepo userRepo;
+    private UserService userService;
+    @Autowired
+    ActivityService activityService;
 
     @GetMapping
     public String userList(Map<String, Object> model) {
-        model.put("users", userRepo.findAll());
+        model.put("users", userService.showAllUsers());
         return "userList";
     }
 
-    @GetMapping("user"+"{user}")
+    @GetMapping("archiveActivities")
+    public String archiveActivities(@AuthenticationPrincipal User user,
+                                    @RequestParam(required = false) String filterByUsername,
+                                    @RequestParam(required = false) String filterByTag,
+                                    Map<String, Object> model) {
+        Iterable<Activity> activities;
+
+        {
+            activities = activityService.showAllArchiveActivities();
+        }
+        model.put("activities", activities);
+        model.put("filter", filterByTag);
+        return "adminArchiveActivity";
+    }
+
+
+    @GetMapping("activities")
+    public String main(@AuthenticationPrincipal User user,
+                       @RequestParam(required = false) String filterByUsername,
+                       @RequestParam(required = false) String filterByTag,
+                       Map<String, Object> model) {
+        Iterable<Activity> activities;
+        if (filterByTag != null && !filterByTag.isEmpty()) {
+            activities = activityService.findActivityByTag(filterByTag);
+        } else {
+            activities = activityService.showAllNotActiveActivitiesAndArchiveFalse();
+        }
+        model.put("activities", activities);
+        model.put("filter", filterByTag);
+        return "adminActivity";
+    }
+
+    @PostMapping("activateActivity")
+    public String activateActivity(@RequestParam(required = false) String editTagAct,
+                                   @RequestParam(required = false) String additionalUsername,
+                                   @RequestParam Integer activityId,
+                                   Map<String, Object> model) {
+        activityService.activateActivityByAdmin(activityId, additionalUsername, editTagAct);
+        Iterable<Activity> activities;
+        activities = activityService.showAllNotActiveActivitiesAndArchiveFalse();
+        model.put("activities", activities);
+        return "redirect:/adminCab/activities";
+    }
+
+    @GetMapping("user" + "{user}")
     public String userEditForm(@PathVariable User user, Map<String, Object> model) {
         model.put("user", user);
         model.put("roles", Role.values());
-        return "userEdit";
+        return  "userEdit";
     }
 
     @PostMapping
@@ -48,7 +97,8 @@ public class AdminController {
                 user.getRoles().add(Role.valueOf(key));
             }
         }
-        userRepo.save(user);
+        user.setActive(Boolean.parseBoolean(form.get("inputState")));
+        userService.updateUser(user);
         return "redirect:/adminCab";
     }
 

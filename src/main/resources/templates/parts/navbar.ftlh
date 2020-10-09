@@ -13,19 +13,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
+            <#if !isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/main">Мой кабинет <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
-            </li>
+            </#if>
             <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/adminCab">лист юзеров</a>
             </li>
             </#if>
+            <#if isAdmin>
+                <li class="nav-item">
+                    <a class="nav-link" href="/adminCab/activities">лист активностей</a>
+                </li>
+            </#if>
+            <#if isAdmin>
+                <li class="nav-item">
+                    <a class="nav-link" href="/adminCab/archiveActivities">архив активностей</a>
+                </li>
+            </#if>
         </ul>
     </div>
     <div class="navbar-text mr-3">${name}</div>
-    <@l.logout />
+    <#if name !="unknown"><@l.logout/></#if>
+
 </nav>

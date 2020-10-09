@@ -9,6 +9,16 @@
             </div>
         </#list>
         <input type="hidden" value="${user.id}" name="userId" />
+
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select name="inputState" id="inputState" class="form-control">
+                <option selected>${user.active?then('true', 'false')}</option>
+                <option>${user.active?then('false', 'true')}</option>
+            </select>
+        </div>
+
+
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <button type="submit">изменить</button>
     </form>
