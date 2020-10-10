@@ -1,9 +1,7 @@
 package org.example.service;
 
-import org.example.domain.Activity;
 import org.example.domain.Role;
 import org.example.domain.User;
-import org.example.repos.ActivityRepo;
 import org.example.repos.UserRepo;
 import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +21,11 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepo.findByUsername(username);
+        User user=userRepo.findByUsername(username);
+        if (user==null){
+            throw new UsernameNotFoundException("User not found");
+        }
+        return user;
     }
 
     public User findUserByUsername(String username){

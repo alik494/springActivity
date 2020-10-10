@@ -7,6 +7,7 @@ import org.example.repos.UserRepo;
 import org.example.service.interfaces.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 
 import java.util.List;
@@ -19,9 +20,6 @@ public class ActivityServiceImpl implements ActivityService {
     @Autowired
     UserRepo userRepo;
 
-    public Iterable<Activity> showAllActivities(){
-        return activityRepo.findAll();
-    }
 
 
     @Override
@@ -40,7 +38,7 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
     @Override
-    public Iterable<Activity> showAllNotActiveUserActivities(User user) {
+    public Iterable<Activity> showAllNotActiveUserActivitiesAndArchiveActFalse(User user) {
         return activityRepo.findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(user);
     }
 
@@ -54,9 +52,7 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
 
-    public void addNewActByUser(String text, String tag, List<User> userList) {
-        Activity activity=new Activity(text, tag, userList);
-        activity.setTime(0);
+    public void addNewActByUser(Activity activity) {
         activityRepo.save(activity);
     }
 
@@ -83,5 +79,14 @@ public class ActivityServiceImpl implements ActivityService {
     @Override
     public Iterable<Activity> findActivityByTag(String filterByTag) {
         return activityRepo.findActivityByTag(filterByTag);
+    }
+
+    @Transactional
+    @Override
+    public void addNewActByUserWithAddUser(Activity activity, String additionalUser) {
+        List<User> users=activity.getUsers();
+        users.add(userRepo.findByUsername(additionalUser));
+        activity.setUsers(users);
+        activityRepo.save(activity);
     }
 }

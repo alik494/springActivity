@@ -3,10 +3,9 @@
 <@c.page>
 
 
-    <form method="get" action="/main">
+    <form method="get" action="/adminCab/activities">
         <input type="text" name="filterByTag" placeholder="введите текст">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-
         <button type="submit">найти по тегу</button>
     </form>
 

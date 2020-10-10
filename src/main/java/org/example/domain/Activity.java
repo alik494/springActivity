@@ -1,7 +1,11 @@
 package org.example.domain;
 
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +15,11 @@ public class Activity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    @NotNull
+    @NotBlank(message = "please fill the text")
+    @Length(max = 2048,message = "text to long (more than 2kb)")
     private String text;
+    @NotBlank(message = "please fill the tag")
+    @Length(max = 255,message = "text to long (more than 255b)")
     private String tag;
     private boolean activeAct;
     private boolean archiveAct;
@@ -22,6 +29,8 @@ public class Activity {
     @JoinColumn(name = "user_id")
     private List<User> users =new ArrayList<>();
 
+
+    @Min(1)
     private Integer time;
 
     public Activity() {

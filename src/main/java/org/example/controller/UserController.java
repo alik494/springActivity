@@ -1,69 +1,97 @@
 package org.example.controller;
 
+import org.example.domain.Activity;
 import org.example.domain.User;
 import org.example.service.interfaces.ActivityService;
 import org.example.service.interfaces.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+
 @Controller
 public class UserController {
-
+    Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     ActivityService activityService;
     @Autowired
     UserService userService;
 
-    @GetMapping("user" + "{user}")
+    @RequestMapping("user" + "{user}")
     public String userForm(
             @PathVariable User user,
-            Map<String, Object> model) {
-        model.put("user", user);
-        model.put("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+            Model model) {
+        model.addAttribute("user", user);
+        model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
         return "userCab";
     }
 
     @GetMapping("/showNotActiveActivities")
     public String showNotActive(
             @AuthenticationPrincipal User user,
-            Map<String, Object> model) {
-        model.put("user", user);
-        model.put("activities", activityService.showAllNotActiveUserActivities(user));
+            Model model) {
+        model.addAttribute("user", user);
+        model.addAttribute("activities", activityService.showAllNotActiveUserActivitiesAndArchiveActFalse(user));
         return "userCabShowNotAct";
     }
+
 
     @PostMapping("/addAct")
     public String add(
             @AuthenticationPrincipal User user,
-            @RequestParam String text,
-            @RequestParam String tag,
-            @RequestParam String additionalUser) {
-        List<User> userList = new ArrayList<>();
-        if (additionalUser != null && !additionalUser.isEmpty() && !user.getUsername().equals(additionalUser)) {
-            userList.add(userService.findUserByUsername(additionalUser));
+            @RequestParam(required = false) String additionalUser,
+            @Valid Activity activity,
+            BindingResult bindingResult,
+            Model model) {
+        if (bindingResult.hasErrors()) {
+            Map<String, String> errorsMap = ControllerUtil.getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+            model.addAttribute("activity", activity);
+            model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+            return "userCab";
+        } else {
+            List<User> userList = new ArrayList<>();
+            userList.add(user);
+            activity.setUsers(userList);
+            if (additionalUser != null && !additionalUser.isEmpty() && !user.getUsername().equals(additionalUser)) {
+                activityService.addNewActByUserWithAddUser(activity,additionalUser);
+                return "redirect:main";
+            }
+            activityService.addNewActByUser(activity);
         }
-        userList.add(user);
-        activityService.addNewActByUser(text, tag, userList);
-        return "redirect:/user" + user.getId();
+        return "redirect:main";
     }
+
 
     @PostMapping("/sendTime")
     public String sendTime(
             @AuthenticationPrincipal User user,
             @RequestParam Integer time,
             @RequestParam Integer activityId,
-            Map<String, Object> model) {
-        activityService.setTimeActivityById(activityId, time);
-        return "redirect:/user" + user.getId();
+            @Valid Activity activity,
+            BindingResult bindingResult,
+            Model model) {
+        if (bindingResult.hasErrors()) {
+            Map<String, String> errorsMap = ControllerUtil.getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+
+            model.addAttribute("activity", activity);
+            model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+            return "userCab";
+        } else {
+            activityService.setTimeActivityById(activityId, time);
+            return "redirect:/user" + user.getId();
+        }
     }
 
 
