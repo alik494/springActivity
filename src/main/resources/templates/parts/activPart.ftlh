@@ -1,4 +1,6 @@
+
 <#macro userAct isShowNotAct>
+
 
     <table>
         <tr>
@@ -20,7 +22,6 @@
                         <form method="post" action="sendTime">
 
                             <input type="datetime" class="form-control ${(timeError??)?string('is-invalid','')}"
-<#--                                   value="<#if activitySendTime?? >${activitySendTime.time}</#if>"-->
                                    name="time" placeholder="потраченое время">
                             <#if timeError??>
                                 <div class="invalid-feedback">
@@ -42,6 +43,7 @@
 
 
 <#macro adminAct isShowPostButtom>
+
     <table>
         <tr>
             <th>id</th>
@@ -52,7 +54,7 @@
                 <th>               time       </th>
             </#if>
         </tr>
-        <#list activities as activity>
+        <#list p.pager as activity>
 
             <tr>
                 <td>                ${activity.id}            </td>

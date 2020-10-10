@@ -3,6 +3,8 @@ package org.example.service.interfaces;
 
 import org.example.domain.Activity;
 import org.example.domain.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface ActivityService {
     Iterable<Activity> showAllActiveUserActivitiesAndArchiveFalse(User user);
@@ -17,7 +19,7 @@ public interface ActivityService {
 
     void activateActivityByAdmin(Integer id, String additionalUser, String tag);
 
-    Iterable<Activity> showAllArchiveActivities();
+    Page<Activity> showAllArchiveActivities(Pageable pageable);
 
     Iterable<Activity> showAllNotActiveActivitiesAndArchiveFalse();
 

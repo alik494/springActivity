@@ -6,6 +6,10 @@ import org.example.domain.User;
 import org.example.service.interfaces.ActivityService;
 import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,22 +36,21 @@ public class AdminController {
     }
 
 
-
-
     @GetMapping("activities")
     public String main(@RequestParam(required = false) String filterByUsername,
                        @RequestParam(required = false) String filterByTag,
-                       Model model) {
+                       Model model,
+                       @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable
+    ) {
         Iterable<Activity> activities;
         if (filterByUsername != null && !filterByUsername.isEmpty()) {
             activities = activityService.findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(filterByUsername);
             model.addAttribute("activities", activities);
             return "adminActivity";
         }
-        if (filterByTag != null && !filterByTag.isEmpty()&&filterByUsername==null) {
+        if (filterByTag != null && !filterByTag.isEmpty() && filterByUsername == null) {
             activities = activityService.findActivityByTagAndActiveActFalseAndArchiveActFalse(filterByTag);
-        }
-        else {
+        } else {
             activities = activityService.showAllNotActiveActivitiesAndArchiveFalse();
         }
         model.addAttribute("activities", activities);
@@ -57,21 +60,22 @@ public class AdminController {
     @GetMapping("archiveActivities")
     public String archiveActivities(@RequestParam(required = false) String filterByUsername,
                                     @RequestParam(required = false) String filterByTag,
-                                    Model model) {
-        Iterable<Activity> activities;
+                                    Model model,
+                                    @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+        Page<Activity> page = null;
 
         if (filterByUsername != null && !filterByUsername.isEmpty()) {
-            activities = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername);
-            model.addAttribute("activities", activities);
+          //  page = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername);
+        //    model.addAttribute("page", page);
             return "adminArchiveActivity";
         }
-        if (filterByTag != null && !filterByTag.isEmpty()&&filterByUsername==null) {
-            activities = activityService.findActivityByTagAndArchiveActTrue(filterByTag);
-        }else
-        {
-            activities = activityService.showAllArchiveActivities();
+        if (filterByTag != null && !filterByTag.isEmpty() && filterByUsername == null) {
+          //  page = activityService.findActivityByTagAndArchiveActTrue(filterByTag);
+        } else {
+            page = activityService.showAllArchiveActivities(pageable);
         }
-        model.addAttribute("activities", activities);
+        model.addAttribute("page", page);
+        model.addAttribute("url", "/adminCab/archiveActivities");
         return "adminArchiveActivity";
     }
 

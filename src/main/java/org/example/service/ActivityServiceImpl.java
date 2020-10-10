@@ -6,6 +6,8 @@ import org.example.repos.ActivityRepo;
 import org.example.repos.UserRepo;
 import org.example.service.interfaces.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,8 +22,8 @@ public class ActivityServiceImpl implements ActivityService {
 
 
     @Override
-    public Iterable<Activity> showAllArchiveActivities() {
-        return activityRepo.findActivityByArchiveActTrue();
+    public Page<Activity> showAllArchiveActivities(Pageable pageable) {
+        return activityRepo.findActivityByArchiveActTrue(pageable);
     }
 
     @Override
