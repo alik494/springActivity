@@ -54,7 +54,7 @@
                 <th>               time       </th>
             </#if>
         </tr>
-        <#list p.pager as activity>
+        <#list activities as activity>
 
             <tr>
                 <td>                ${activity.id}            </td>
