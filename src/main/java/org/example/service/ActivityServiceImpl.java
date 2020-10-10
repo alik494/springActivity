@@ -8,10 +8,8 @@ import org.example.service.interfaces.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.ui.Model;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class ActivityServiceImpl implements ActivityService {
@@ -19,7 +17,6 @@ public class ActivityServiceImpl implements ActivityService {
     ActivityRepo activityRepo;
     @Autowired
     UserRepo userRepo;
-
 
 
     @Override
@@ -43,8 +40,8 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
     @Override
-    public void setTimeActivityById(Integer id,Integer time) {
-        Activity activity=activityRepo.findActivityById(id);
+    public void setTimeActivityById(Integer id, Integer time) {
+        Activity activity = activityRepo.findActivityById(id);
         activity.setTime(time);
         activity.setActiveAct(false);
         activity.setArchiveAct(true);
@@ -57,36 +54,56 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
 
-
     @Override
-    public void activateActivityByAdmin(Integer id,String additionalUser,String tag) {
-        Activity activity=activityRepo.findActivityById(id);
-        User addedUser=userRepo.findByUsername(additionalUser);
+    public void activateActivityByAdmin(Integer id, String additionalUser, String tag) {
+        Activity activity = activityRepo.findActivityById(id);
+        User addedUser = userRepo.findByUsername(additionalUser);
 
-        if (additionalUser != null && !additionalUser.isEmpty()&&!activity.getUsers().contains(addedUser)){
-            List<User> users=activity.getUsers();
+        if (additionalUser != null && !additionalUser.isEmpty() && !activity.getUsers().contains(addedUser)) {
+            List<User> users = activity.getUsers();
             users.add(addedUser);
             activity.setUsers(users);
         }
-        if (tag != null && !tag.isEmpty()){
-
+        if (tag != null && !tag.isEmpty()) {
             activity.setTag(tag);
         }
         activity.setActiveAct(true);
+        activity.setTime(1);
         activityRepo.save(activity);
     }
 
-    @Override
-    public Iterable<Activity> findActivityByTag(String filterByTag) {
-        return activityRepo.findActivityByTag(filterByTag);
-    }
 
     @Transactional
     @Override
     public void addNewActByUserWithAddUser(Activity activity, String additionalUser) {
-        List<User> users=activity.getUsers();
+        List<User> users = activity.getUsers();
         users.add(userRepo.findByUsername(additionalUser));
         activity.setUsers(users);
         activityRepo.save(activity);
+    }
+
+    @Override
+    public Iterable<Activity> findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(String filterByUsername) {
+        User user = userRepo.findByUsername(filterByUsername);
+        return activityRepo.findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(user);
+    }
+
+
+    @Override
+    public Iterable<Activity> findActivityByTagAndActiveActFalseAndArchiveActFalse(String filterByTag) {
+        return activityRepo.findActivityByTagAndActiveActFalseAndArchiveActFalse(filterByTag);
+    }
+
+    @Override
+    public Iterable<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername) {
+        User user = userRepo.findByUsername(filterByUsername);
+        return activityRepo.findActivityByUsersAndArchiveActTrue(user);
+
+    }
+
+    @Override
+    public Iterable<Activity> findActivityByTagAndArchiveActTrue(String filterByTag) {
+        return activityRepo.findActivityByTagAndArchiveActTrue(filterByTag);
+
     }
 }

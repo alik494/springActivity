@@ -3,16 +3,13 @@
 <@c.page>
 
 
-    <form method="get" action="/main">
-        <input type="text" name="filterByTag" placeholder="введите текст">
-        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-
+    <form method="get" action="/adminCab/archiveActivities">
+        <input type="text" name="filterByTag" placeholder="введите tag">
         <button type="submit">найти по тегу</button>
     </form>
 
-    <form method="get" action="/main">
-        <input type="text" name="userName" placeholder="введите текст">
-        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+    <form method="get" action="/adminCab/archiveActivities">
+        <input type="text" name="filterByUsername" placeholder="введите текст">
         <button type="submit">найти по юзеру</button>
     </form>
 

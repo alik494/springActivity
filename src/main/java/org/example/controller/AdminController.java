@@ -7,8 +7,8 @@ import org.example.service.interfaces.ActivityService;
 import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -26,41 +26,53 @@ public class AdminController {
     ActivityService activityService;
 
     @GetMapping
-    public String userList(Map<String, Object> model) {
-        model.put("users", userService.showAllUsers());
+    public String userList(Model model) {
+        model.addAttribute("users", userService.showAllUsers());
         return "userList";
     }
 
-    @GetMapping("archiveActivities")
-    public String archiveActivities(@AuthenticationPrincipal User user,
-                                    @RequestParam(required = false) String filterByUsername,
-                                    @RequestParam(required = false) String filterByTag,
-                                    Map<String, Object> model) {
-        Iterable<Activity> activities;
 
-        {
-            activities = activityService.showAllArchiveActivities();
-        }
-        model.put("activities", activities);
-        model.put("filter", filterByTag);
-        return "adminArchiveActivity";
-    }
 
 
     @GetMapping("activities")
-    public String main(@AuthenticationPrincipal User user,
-                       @RequestParam(required = false) String filterByUsername,
+    public String main(@RequestParam(required = false) String filterByUsername,
                        @RequestParam(required = false) String filterByTag,
-                       Map<String, Object> model) {
+                       Model model) {
         Iterable<Activity> activities;
-        if (filterByTag != null && !filterByTag.isEmpty()) {
-            activities = activityService.findActivityByTag(filterByTag);
-        } else {
+        if (filterByUsername != null && !filterByUsername.isEmpty()) {
+            activities = activityService.findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(filterByUsername);
+            model.addAttribute("activities", activities);
+            return "adminActivity";
+        }
+        if (filterByTag != null && !filterByTag.isEmpty()&&filterByUsername==null) {
+            activities = activityService.findActivityByTagAndActiveActFalseAndArchiveActFalse(filterByTag);
+        }
+        else {
             activities = activityService.showAllNotActiveActivitiesAndArchiveFalse();
         }
-        model.put("activities", activities);
-        model.put("filter", filterByTag);
+        model.addAttribute("activities", activities);
         return "adminActivity";
+    }
+
+    @GetMapping("archiveActivities")
+    public String archiveActivities(@RequestParam(required = false) String filterByUsername,
+                                    @RequestParam(required = false) String filterByTag,
+                                    Model model) {
+        Iterable<Activity> activities;
+
+        if (filterByUsername != null && !filterByUsername.isEmpty()) {
+            activities = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername);
+            model.addAttribute("activities", activities);
+            return "adminArchiveActivity";
+        }
+        if (filterByTag != null && !filterByTag.isEmpty()&&filterByUsername==null) {
+            activities = activityService.findActivityByTagAndArchiveActTrue(filterByTag);
+        }else
+        {
+            activities = activityService.showAllArchiveActivities();
+        }
+        model.addAttribute("activities", activities);
+        return "adminArchiveActivity";
     }
 
     @PostMapping("activateActivity")
@@ -79,7 +91,7 @@ public class AdminController {
     public String userEditForm(@PathVariable User user, Map<String, Object> model) {
         model.put("user", user);
         model.put("roles", Role.values());
-        return  "userEdit";
+        return "userEdit";
     }
 
     @PostMapping

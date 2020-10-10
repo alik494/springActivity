@@ -4,18 +4,28 @@ package org.example.service.interfaces;
 import org.example.domain.Activity;
 import org.example.domain.User;
 
-import java.util.List;
-
 public interface ActivityService {
-    public Iterable<Activity> showAllArchiveActivities();
-    public Iterable<Activity> showAllNotActiveActivitiesAndArchiveFalse();
-    public Iterable<Activity> showAllActiveUserActivitiesAndArchiveFalse(User user);
-    public Iterable<Activity> showAllNotActiveUserActivitiesAndArchiveActFalse(User user);
-    public void  setTimeActivityById(Integer id,Integer time);
-    public void addNewActByUser(Activity activity) ;
-    public void activateActivityByAdmin(Integer id,String additionalUser,String tag)  ;
+    Iterable<Activity> showAllActiveUserActivitiesAndArchiveFalse(User user);
 
-    Iterable<Activity> findActivityByTag(String filterByTag);
+    Iterable<Activity> showAllNotActiveUserActivitiesAndArchiveActFalse(User user);
+
+    void addNewActByUser(Activity activity);
+
+    void setTimeActivityById(Integer id, Integer time);
 
     void addNewActByUserWithAddUser(Activity activity, String additionalUser);
+
+    void activateActivityByAdmin(Integer id, String additionalUser, String tag);
+
+    Iterable<Activity> showAllArchiveActivities();
+
+    Iterable<Activity> showAllNotActiveActivitiesAndArchiveFalse();
+
+    Iterable<Activity> findActivityByTagAndActiveActFalseAndArchiveActFalse(String filterByTag);
+
+    Iterable<Activity> findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(String filterByUsername);
+
+    Iterable<Activity> findActivityByTagAndArchiveActTrue(String filterByTag);
+
+    Iterable<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername);
 }

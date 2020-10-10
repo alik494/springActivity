@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -64,7 +65,7 @@ public class UserController {
             userList.add(user);
             activity.setUsers(userList);
             if (additionalUser != null && !additionalUser.isEmpty() && !user.getUsername().equals(additionalUser)) {
-                activityService.addNewActByUserWithAddUser(activity,additionalUser);
+                activityService.addNewActByUserWithAddUser(activity, additionalUser);
                 return "redirect:main";
             }
             activityService.addNewActByUser(activity);
@@ -76,22 +77,31 @@ public class UserController {
     @PostMapping("/sendTime")
     public String sendTime(
             @AuthenticationPrincipal User user,
-            @RequestParam Integer time,
             @RequestParam Integer activityId,
-            @Valid Activity activity,
-            BindingResult bindingResult,
+            @RequestParam String time,
             Model model) {
-        if (bindingResult.hasErrors()) {
-            Map<String, String> errorsMap = ControllerUtil.getErrors(bindingResult);
-            model.mergeAttributes(errorsMap);
-
-            model.addAttribute("activity", activity);
+        boolean isConformationEmpty = StringUtils.isEmpty(time);
+        if (isConformationEmpty) {
+            model.addAttribute("timeError", "Time connot be empty");
             model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
             return "userCab";
-        } else {
-            activityService.setTimeActivityById(activityId, time);
-            return "redirect:/user" + user.getId();
         }
+        int timeInt;
+        try {
+            timeInt = Integer.parseInt(time);
+        } catch (NumberFormatException ex) {
+            model.addAttribute("timeError", "Parse number");
+            model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+            return "userCab";
+        }
+        if (timeInt < 0) {
+            model.addAttribute("timeError", "number must be more then 0");
+            model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+            return "userCab";
+        }
+        activityService.setTimeActivityById(activityId, timeInt);
+        model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
+        return "redirect:/user" + user.getId();
     }
 
 
