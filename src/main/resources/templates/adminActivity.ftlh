@@ -15,7 +15,7 @@
     </form>
 
     <div>Список Активностей</div>
-    <@a.adminAct false/>
+    <@a.adminAct true/>
 <#--    <@p.pager url page/>-->
 <#--    <table>-->
 <#--        <tr>-->
