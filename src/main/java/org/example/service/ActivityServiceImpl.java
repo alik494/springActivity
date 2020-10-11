@@ -41,7 +41,7 @@ public class ActivityServiceImpl implements ActivityService {
     public Iterable<Activity> showAllNotActiveUserActivitiesAndArchiveActFalse(User user) {
         return activityRepo.findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(user);
     }
-
+    @Transactional
     @Override
     public void setTimeActivityById(Integer id, Integer time) {
         Activity activity = activityRepo.findActivityById(id);
@@ -88,7 +88,7 @@ public class ActivityServiceImpl implements ActivityService {
         activity.setUsers(users);
         activityRepo.save(activity);
     }
-
+    @Transactional
     @Override
     public Iterable<Activity> findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(String filterByUsername) {
         User user = userRepo.findByUsername(filterByUsername);
@@ -100,7 +100,7 @@ public class ActivityServiceImpl implements ActivityService {
     public Iterable<Activity> findActivityByTagAndActiveActFalseAndArchiveActFalse(String filterByTag) {
         return activityRepo.findActivityByTagAndActiveActFalseAndArchiveActFalse(filterByTag);
     }
-
+    @Transactional
     @Override
     public Page<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername,Pageable pageable) {
         User user = userRepo.findByUsername(filterByUsername);

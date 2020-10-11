@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 
@@ -17,29 +18,35 @@ import java.util.Collections;
 public class UserServiceImpl implements UserDetailsService, UserService {
 
     @Autowired
-    private  UserRepo userRepo;
+    private UserRepo userRepo;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user=userRepo.findByUsername(username);
-        if (user==null){
+        User user = userRepo.findByUsername(username);
+        if (user == null) {
             throw new UsernameNotFoundException("User not found");
         }
         return user;
     }
 
-    public User findUserByUsername(String username){
+    public User findUserByUsername(String username) {
         return userRepo.findByUsername(username);
     }
 
+    @Transactional
     @Override
     public boolean addUser(User user) {
-        User userFromDB=userRepo.findByUsername(user.getUsername());
-        if (userFromDB!=null){
+        User userFromDB = userRepo.findByUsername(user.getUsername());
+        if (userFromDB != null) {
             return false;
         }
         user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
+        //temporary for admin
+        if (user.getUsername().equals("admin")) {
+            user.setRoles(Collections.singleton(Role.ADMIN));
+        } else {
+            user.setRoles(Collections.singleton(Role.USER));
+        }
         userRepo.save(user);
         return true;
     }
@@ -54,6 +61,4 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     public Iterable<User> showAllUsers() {
         return userRepo.findAll();
     }
-
-
 }

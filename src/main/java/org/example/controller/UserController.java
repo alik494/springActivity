@@ -80,13 +80,12 @@ public class UserController {
             @RequestParam Integer activityId,
             @RequestParam String time,
             Model model) {
-        boolean isConformationEmpty = StringUtils.isEmpty(time);
-        if (isConformationEmpty) {
+        int timeInt;
+        if (StringUtils.isEmpty(time)) {
             model.addAttribute("timeError", "Time connot be empty");
             model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
             return "userCab";
         }
-        int timeInt;
         try {
             timeInt = Integer.parseInt(time);
         } catch (NumberFormatException ex) {
@@ -100,7 +99,6 @@ public class UserController {
             return "userCab";
         }
         activityService.setTimeActivityById(activityId, timeInt);
-        model.addAttribute("activities", activityService.showAllActiveUserActivitiesAndArchiveFalse(user));
         return "redirect:/user" + user.getId();
     }
 

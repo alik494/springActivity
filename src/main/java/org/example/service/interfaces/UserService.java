@@ -6,12 +6,12 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 public interface UserService {
 
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException ;
+     UserDetails loadUserByUsername(String username) throws UsernameNotFoundException ;
 
-    public User findUserByUsername(String username);
-    public boolean addUser(User user);
-    public boolean updateUser(User user);
+     User findUserByUsername(String username);
+     boolean addUser(User user);
+     boolean updateUser(User user);
 
-    public Iterable<User> showAllUsers();
+     Iterable<User> showAllUsers();
 
 }

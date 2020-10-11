@@ -1,9 +1,6 @@
 package org.example.controller;
 
-import freemarker.template.utility.StringUtil;
-import org.example.domain.Role;
 import org.example.domain.User;
-import org.example.repos.UserRepo;
 import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -17,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
-import java.util.Collections;
 import java.util.Map;
 
 @Controller
