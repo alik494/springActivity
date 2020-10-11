@@ -28,24 +28,19 @@ public class RegistrationLoginController {
 
     @RequestMapping("/login")
     public String login(
-            @AuthenticationPrincipal User user,
-            Map<String, Object> model
+            @AuthenticationPrincipal User user
+
     ) {
         if (user != null) {
             return "greeting";
         }
-        if (user != null && !user.isActive()) {
-            model.put("messages", "аккаунт було  деактивовано");
-            return "login";
-        }
-        model.put("messages", "Please log in");
+
         return "login";
     }
 
     @GetMapping("/registration")
-    public String registration(Map<String, Object> model
+    public String registration(
     ) {
-        model.put("messages", "Add new user");
         return "registration";
     }
 
@@ -68,7 +63,7 @@ public class RegistrationLoginController {
             model.addAttribute("passwordError", "Password are different");
             return "registration";
         }
-        if (isConformationEmpty){
+        if (isConformationEmpty) {
             model.addAttribute("password2Error", "Password conformation cannot be empty");
             return "registration";
         }

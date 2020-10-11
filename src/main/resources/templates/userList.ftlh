@@ -1,17 +1,19 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/loginPart.ftlh" as l>
+
+<#import "/spring.ftl" as spring/>
 <@c.page>
 
-    <div>Список Users</div>
+    <div> <@spring.message "nav.listUsers"/></div>
     <table>
         <thead>
         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>pass</th>
-            <th>role</th>
-            <th>link to edit</th>
-            <th>active</th>
+            <th> <@spring.message "activPart.id"/></th>
+            <th><@spring.message "userList.name"/></th>
+            <th><@spring.message "userList.pass"/></th>
+            <th><@spring.message "userList.role"/></th>
+            <th><@spring.message "userList.LinkToEdit"/></th>
+            <th><@spring.message "userList.active"/></th>
         </tr>
         </thead>
         <#list users as user>
@@ -20,7 +22,9 @@
                 <td>${user.username}</td>
                 <td>${user.password}</td>
                 <td><#list user.roles as role > ${role}<#sep>, </#list></td>
-                <td><a href="/adminCab/user${user.id}">edit</a></td>
+                <td><a href="/adminCab/user${user.id}">
+                        <@spring.message "userList.edit"/>
+                    </a></td>
                 <td>${user.active?then('true', 'false')}</td>
             </tr>
 

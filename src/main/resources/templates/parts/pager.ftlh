@@ -1,3 +1,5 @@
+
+<#import "/spring.ftl" as spring/>
 <#macro pager url  page>
     <#if page.getTotalPages() gt 7>
         <#assign
@@ -17,7 +19,7 @@
     <div class="mt-3">
         <ul class="pagination">
             <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Pages</a>
+                <a class="page-link" href="#" tabindex="-1"><@spring.message "pager.pages"/></a>
             </li>
 
             <#list  1..page.getTotalPages() as p>
@@ -40,7 +42,7 @@
 
         <ul class="pagination">
             <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Елементов на странице</a>
+                <a class="page-link" href="#" tabindex="-1"><@spring.message "pager.elementOnPage"/></a>
             </li>
 
             <#list  [5,10,25,50] as c>

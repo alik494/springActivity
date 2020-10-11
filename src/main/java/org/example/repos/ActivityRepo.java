@@ -10,11 +10,11 @@ public interface ActivityRepo extends CrudRepository<Activity,Long> {
         Activity findActivityById(Integer id);
         Iterable <Activity> findActivityByTagAndActiveActFalseAndArchiveActFalse(String tag);
 
-        Page <Activity> findActivityByArchiveActTrue(Pageable pageable);
         Iterable <Activity> findActivityByActiveActFalseAndArchiveActFalse();
         Iterable <Activity> findActivityByUsers(User user);
         Iterable <Activity> findActivityByUsersAndActiveActIsTrueAndArchiveActFalse(User user);
         Iterable <Activity> findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(User user);
-        Iterable<Activity> findActivityByUsersAndArchiveActTrue(User user);
-        Iterable<Activity> findActivityByTagAndArchiveActTrue(String tag);
+        Page<Activity> findActivityByUsersAndArchiveActTrue(User user,Pageable pageable);
+        Page<Activity> findActivityByTagAndArchiveActTrue(String tag,Pageable pageable);
+        Page <Activity> findActivityByArchiveActTrue(Pageable pageable);
 }

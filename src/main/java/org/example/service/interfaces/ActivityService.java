@@ -27,7 +27,7 @@ public interface ActivityService {
 
     Iterable<Activity> findActivityByUsersAndActiveActIsFalseAndArchiveActFalse(String filterByUsername);
 
-    Iterable<Activity> findActivityByTagAndArchiveActTrue(String filterByTag);
+    Page<Activity> findActivityByTagAndArchiveActTrue(String filterByTag,Pageable pageable);
 
-    Iterable<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername);
+    Page<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername,Pageable pageable);
 }

@@ -10,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -56,10 +57,14 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
 
+    @Transactional
     @Override
     public void activateActivityByAdmin(Integer id, String additionalUser, String tag) {
         Activity activity = activityRepo.findActivityById(id);
-        User addedUser = userRepo.findByUsername(additionalUser);
+        User addedUser = null;
+        if (!StringUtils.isEmpty(additionalUser)){
+             addedUser = userRepo.findByUsername(additionalUser);
+        }
 
         if (additionalUser != null && !additionalUser.isEmpty() && !activity.getUsers().contains(addedUser)) {
             List<User> users = activity.getUsers();
@@ -97,15 +102,15 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
     @Override
-    public Iterable<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername) {
+    public Page<Activity> findActivityByUsersAndArchiveActTrue(String filterByUsername,Pageable pageable) {
         User user = userRepo.findByUsername(filterByUsername);
-        return activityRepo.findActivityByUsersAndArchiveActTrue(user);
+        return activityRepo.findActivityByUsersAndArchiveActTrue(user,pageable);
 
     }
 
     @Override
-    public Iterable<Activity> findActivityByTagAndArchiveActTrue(String filterByTag) {
-        return activityRepo.findActivityByTagAndArchiveActTrue(filterByTag);
+    public Page<Activity> findActivityByTagAndArchiveActTrue(String filterByTag,Pageable pageable) {
+        return activityRepo.findActivityByTagAndArchiveActTrue(filterByTag,pageable);
 
     }
 }

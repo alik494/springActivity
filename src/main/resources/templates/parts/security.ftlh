@@ -1,3 +1,5 @@
+
+<#import "/spring.ftl" as spring/>
 <#assign
     know=Session.SPRING_SECURITY_CONTEXT??
     >

@@ -1,11 +1,12 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/loginPart.ftlh" as l>
+
+<#import "/spring.ftl" as spring/>
 <@c.page>
    <div>
        <@l.logout/>
-
    </div>
-    <span><a href="/adminCab">user List</a> </span>
+    <span><a href="/adminCab">  <@spring.message "nav.listUsers"/></a> </span>
 
     <div>
         <form method="post" action="addAct">

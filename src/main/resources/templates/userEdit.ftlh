@@ -1,4 +1,6 @@
 <#import "parts/common.ftlh" as c>
+
+<#import "/spring.ftl" as spring/>
 <@c.page>
     <form action="/adminCab"  method="post" >
         <input type="text" name="username" value="${user.username}">
@@ -11,7 +13,7 @@
         <input type="hidden" value="${user.id}" name="userId" />
 
         <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+            <label for="inputState"><@spring.message "adminForm.stateOfUser"/></label>
             <select name="inputState" id="inputState" class="form-control">
                 <option selected>${user.active?then('true', 'false')}</option>
                 <option>${user.active?then('false', 'true')}</option>
@@ -20,7 +22,7 @@
 
 
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <button type="submit">изменить</button>
+        <button type="submit"> <@spring.message "adminForm.submitChangeOfUser"/></button>
     </form>
 
 </@c.page>

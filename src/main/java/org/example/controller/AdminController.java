@@ -57,20 +57,24 @@ public class AdminController {
         return "adminActivity";
     }
 
+
+
+
     @GetMapping("archiveActivities")
     public String archiveActivities(@RequestParam(required = false) String filterByUsername,
                                     @RequestParam(required = false) String filterByTag,
                                     Model model,
                                     @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
-        Page<Activity> page = null;
+        Page<Activity> page;
 
         if (filterByUsername != null && !filterByUsername.isEmpty()) {
-          //  page = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername);
-        //    model.addAttribute("page", page);
+            page = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername, pageable);
+            model.addAttribute("page", page);
+            model.addAttribute("url", "/adminCab/archiveActivities");
             return "adminArchiveActivity";
         }
         if (filterByTag != null && !filterByTag.isEmpty() && filterByUsername == null) {
-          //  page = activityService.findActivityByTagAndArchiveActTrue(filterByTag);
+            page = activityService.findActivityByTagAndArchiveActTrue(filterByTag, pageable);
         } else {
             page = activityService.showAllArchiveActivities(pageable);
         }
@@ -79,22 +83,65 @@ public class AdminController {
         return "adminArchiveActivity";
     }
 
+    @GetMapping("archiveActivities/sortByText")
+    public String sortByText(@RequestParam(required = false) String filterByUsername,
+                             @RequestParam(required = false) String filterByTag,
+                             Model model,
+                             @PageableDefault(sort = {"text"}, direction = Sort.Direction.ASC) Pageable pageable) {
+        Page<Activity> page;
+
+        if (filterByUsername != null && !filterByUsername.isEmpty()) {
+            page = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername, pageable);
+            model.addAttribute("page", page);
+            model.addAttribute("url", "/adminCab/archiveActivities/sortByText");
+            return "adminArchiveActivity";
+        }
+        if (filterByTag != null && !filterByTag.isEmpty() && filterByUsername == null) {
+            page = activityService.findActivityByTagAndArchiveActTrue(filterByTag, pageable);
+        } else {
+            page = activityService.showAllArchiveActivities(pageable);
+        }
+        model.addAttribute("page", page);
+        model.addAttribute("url", "/adminCab/archiveActivities/sortByText");
+        return "adminArchiveActivity";
+    }
+
+    @GetMapping("archiveActivities/sortByTag")
+    public String sortByTag(@RequestParam(required = false) String filterByUsername,
+                             @RequestParam(required = false) String filterByTag,
+                             Model model,
+                             @PageableDefault(sort = {"tag"}, direction = Sort.Direction.ASC) Pageable pageable) {
+        Page<Activity> page;
+
+        if (filterByUsername != null && !filterByUsername.isEmpty()) {
+            page = activityService.findActivityByUsersAndArchiveActTrue(filterByUsername, pageable);
+            model.addAttribute("page", page);
+            model.addAttribute("url", "/adminCab/archiveActivities/sortByTag");
+            return "adminArchiveActivity";
+        }
+        if (filterByTag != null && !filterByTag.isEmpty() && filterByUsername == null) {
+            page = activityService.findActivityByTagAndArchiveActTrue(filterByTag, pageable);
+        } else {
+            page = activityService.showAllArchiveActivities(pageable);
+        }
+        model.addAttribute("page", page);
+        model.addAttribute("url", "/adminCab/archiveActivities/sortByTag");
+        return "adminArchiveActivity";
+    }
+
     @PostMapping("activateActivity")
     public String activateActivity(@RequestParam(required = false) String editTagAct,
                                    @RequestParam(required = false) String additionalUsername,
-                                   @RequestParam Integer activityId,
-                                   Map<String, Object> model) {
+                                   @RequestParam Integer activityId
+    ) {
         activityService.activateActivityByAdmin(activityId, additionalUsername, editTagAct);
-        Iterable<Activity> activities;
-        activities = activityService.showAllNotActiveActivitiesAndArchiveFalse();
-        model.put("activities", activities);
         return "redirect:/adminCab/activities";
     }
 
     @GetMapping("user" + "{user}")
-    public String userEditForm(@PathVariable User user, Map<String, Object> model) {
-        model.put("user", user);
-        model.put("roles", Role.values());
+    public String userEditForm(@PathVariable User user, Model model) {
+        model.addAttribute("user", user);
+        model.addAttribute("roles", Role.values());
         return "userEdit";
     }
 
