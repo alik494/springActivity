@@ -30,7 +30,6 @@
                                 </div>
                             </#if>
                             <input type="hidden" value=" ${activitySendTime.id}  " name="activityId">
-                            <input type="hidden" value=" ${activitySendTime.text}  " name="activityText">
                             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                             <button type="submit"><@spring.message "activPart.endActivity"/></button>
                         </form>
