@@ -1,9 +1,8 @@
 package org.example.controller;
 
+import org.apache.log4j.Logger;
 import org.example.domain.Role;
 import org.example.domain.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,15 +15,13 @@ import java.util.Locale;
 
 @Controller
 public class MainController {
-    Logger logger = LoggerFactory.getLogger(UserController.class);
+    /**
+     * Instance of Logger
+     */
+    private static final Logger logger = Logger.getLogger(MainController.class);
 
     @GetMapping
     public String greeting(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
-        Locale currentLocale = request.getLocale();
-        logger.error(currentLocale.getCountry());
-        logger.error(currentLocale.getDisplayCountry());
-        logger.error(currentLocale.getLanguage());
-        logger.error(currentLocale.getDisplayLanguage());
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         return "greeting";

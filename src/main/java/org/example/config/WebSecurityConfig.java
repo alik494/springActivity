@@ -32,17 +32,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login")
+                .usernameParameter("email")
                 .successForwardUrl("/main")
                 .permitAll()
                 .and()
                 .logout()
-                .permitAll();
-        http
+                .permitAll()
+                .and()
                 .sessionManagement()
                 .maximumSessions(1)
                 .maxSessionsPreventsLogin(true)
-                .expiredUrl("/login?expired")
-                .sessionRegistry(sessionRegistry());
+//                .expiredUrl("/logout")
+//                .sessionRegistry(sessionRegistry())
+        ;
     }
 
     @Bean
@@ -60,8 +62,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userService)
                 .passwordEncoder(NoOpPasswordEncoder.getInstance());
         auth.inMemoryAuthentication()
-                .withUser("admin")
-                .password("admin")
+                .withUser("email")
+                .password("password")
+
                 .authorities("ROLE_USER");
     }
 }

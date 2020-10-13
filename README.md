@@ -19,4 +19,4 @@ Clone this repository: in your command line enter git clone https://github.com/a
 
 ## Launch instructions
   * Run ServingWebContentApplication.class
-  * To login as admin just register using name "admin" with any password and you will get ROLE.ADMIN
+  * To login as admin just register using name "Admin" with any password and you will get ROLE.ADMIN

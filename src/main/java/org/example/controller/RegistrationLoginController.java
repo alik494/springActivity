@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.apache.log4j.Logger;
 import org.example.domain.User;
 import org.example.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,14 +20,18 @@ import java.util.Map;
 @Controller
 public class RegistrationLoginController {
 
+    /**
+     * Instance of Logger
+     */
+    private static final Logger log = Logger.getLogger(RegistrationLoginController.class);
     @Autowired
     private UserService userService;
 
     @RequestMapping("/login")
     public String login(
             @AuthenticationPrincipal User user
-
     ) {
+        log.info(user);
         if (user != null) {
             return "greeting";
         }
@@ -64,7 +69,9 @@ public class RegistrationLoginController {
             return "registration";
         }
         if (!userService.addUser(user)) {
-            model.addAttribute("usernameError", "Юзер вже є з таким логіном!");
+
+            log.debug("New user: " + user.toString());
+            model.addAttribute("emailError", "Юзер  з таким логіном, вже є");
             return "registration";
         }
 

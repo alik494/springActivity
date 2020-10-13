@@ -1,11 +1,10 @@
 package org.example.controller;
 
+import org.apache.log4j.Logger;
 import org.example.domain.Activity;
 import org.example.domain.User;
 import org.example.service.interfaces.ActivityService;
 import org.example.service.interfaces.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -22,7 +21,10 @@ import java.util.Map;
 
 @Controller
 public class UserController {
-    Logger logger = LoggerFactory.getLogger(UserController.class);
+    /**
+     * Instance of Logger
+     */
+    private static final Logger log = Logger.getLogger(UserController.class);
     @Autowired
     ActivityService activityService;
     @Autowired

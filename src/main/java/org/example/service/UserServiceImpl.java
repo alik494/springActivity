@@ -1,5 +1,7 @@
 package org.example.service;
 
+import org.apache.log4j.Logger;
+import org.example.controller.RegistrationLoginController;
 import org.example.domain.Role;
 import org.example.domain.User;
 import org.example.repos.UserRepo;
@@ -17,12 +19,17 @@ import java.util.Collections;
 @Service
 public class UserServiceImpl implements UserDetailsService, UserService {
 
+    /**
+     * Instance of Logger
+     */
+    private static final Logger log = Logger.getLogger(UserServiceImpl.class);
+
     @Autowired
     private UserRepo userRepo;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepo.findByUsername(username);
+            User user = userRepo.findByEmail(username);
         if (user == null) {
             throw new UsernameNotFoundException("User not found");
         }
@@ -36,13 +43,14 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Transactional
     @Override
     public boolean addUser(User user) {
-        User userFromDB = userRepo.findByUsername(user.getUsername());
+        log.debug("New user: " + user.toString());
+        User userFromDB = userRepo.findByEmail(user.getEmail());
         if (userFromDB != null) {
             return false;
         }
         user.setActive(true);
         //temporary for admin
-        if (user.getUsername().equals("admin")) {
+        if (user.getUsername().equals("Admin")) {
             user.setRoles(Collections.singleton(Role.ADMIN));
         } else {
             user.setRoles(Collections.singleton(Role.USER));
