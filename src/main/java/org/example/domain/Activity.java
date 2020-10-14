@@ -13,7 +13,7 @@ import java.util.List;
 public class Activity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     @NotBlank(message = "please fill the text")
     @Length(max = 2048,message = "text to long (more than 2kb)")
     private String text;
@@ -80,11 +80,11 @@ public class Activity {
         return "none";
 
     }
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
