@@ -6,3 +6,917 @@
 2020-10-13 21:34:12 INFO  RegistrationLoginController:34 - 
 2020-10-13 21:47:00 INFO  RegistrationLoginController:34 - 
 2020-10-14 06:39:58 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:06:26 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:06:53 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:07:12 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:08:17 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:08:30 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:08:44 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:12:03 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:14:25 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:14:26 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:19:24 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:19:24 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:20:35 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:24:08 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:24:25 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:24:38 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:24:53 INFO  RegistrationLoginController:34 - 
+2020-10-29 23:25:12 INFO  RegistrationLoginController:34 - 
+2020-10-30 01:50:04 INFO  RegistrationLoginController:34 - 
+2020-10-30 01:50:08 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "greeting.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en_US.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting.ftlh"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "greeting.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\greeting.ftlh"
+2020-11-03 17:26:52 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 17:26:52 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 17:26:52 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:26:52 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:26:52 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:26:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:26:52 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 17:26:52 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "greeting.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en_US.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting.ftlh"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "greeting.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\greeting.ftlh"
+2020-11-03 17:27:06 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 17:27:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 17:27:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:27:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:27:06 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:27:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:27:06 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 17:27:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "greeting.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en_US.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting.ftlh"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "greeting.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\greeting.ftlh"
+2020-11-03 17:45:10 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 17:45:10 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 17:45:10 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:10 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:10 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:45:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:45:10 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 17:45:10 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:12 DEBUG cache:45 - Couldn't find template in cache for "login.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:45:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en_US.ftlh"): Not found
+2020-11-03 17:45:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en.ftlh"): Not found
+2020-11-03 17:45:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:45:12 DEBUG cache:45 - Loading template for "login.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\login.ftlh"
+2020-11-03 17:45:12 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en_US.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\login.ftlh hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\security.ftlh hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\loginPart.ftlh hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\common.ftlh hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:45:18 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\navbar.ftlh hasn't changed.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:18 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:18 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\greeting.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\common.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\navbar.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\security.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\loginPart.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en_US.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en.ftlh"): Not found
+2020-11-03 17:45:51 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:45:51 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\login.ftlh hasn't changed.
+2020-11-03 17:45:51 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:51 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:53 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:45:53 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:45:53 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "login.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en_US.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "login.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\login.ftlh"
+2020-11-03 17:49:03 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 17:49:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 17:49:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:49:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:49:03 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 17:49:03 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:03 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:04 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:04 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:06 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:06 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:06 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:07 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:07 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:07 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:08 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:08 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:08 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en_US.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_en.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\login.ftlh hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\security.ftlh hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\loginPart.ftlh hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\common.ftlh hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 17:49:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\navbar.ftlh hasn't changed.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:11 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:11 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - Couldn't find template in cache for "registration.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("registration_en_US.ftlh"): Not found
+2020-11-03 17:49:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("registration_en.ftlh"): Not found
+2020-11-03 17:49:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("registration.ftlh"): Found
+2020-11-03 17:49:12 DEBUG cache:45 - Loading template for "registration.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\registration.ftlh"
+2020-11-03 17:49:12 DEBUG cache:45 - "registration.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:12 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "login.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/common.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/navbar.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/security.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:12 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "registration.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("registration_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("registration.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "registration.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\registration.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - "registration.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_uk.ftl"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "spring.ftl"("uk", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "parts/common.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "parts/security.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:14 DEBUG cache:45 - Couldn't find template in cache for "login.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_uk.ftlh"): Not found
+2020-11-03 17:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:49:14 DEBUG cache:45 - Loading template for "login.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\login.ftlh"
+2020-11-03 17:49:14 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:14 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:15 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:15 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:15 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("login_uk.ftlh"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("login.ftlh"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\login.ftlh hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_uk.ftlh"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\security.ftlh hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_uk.ftl"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed): using cached since jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_uk.ftlh"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\loginPart.ftlh hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_uk.ftlh"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\common.ftlh hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_uk.ftlh"): Not found
+2020-11-03 17:49:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\navbar.ftlh hasn't changed.
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:27 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 INFO  RegistrationLoginController:34 - 
+2020-11-03 17:49:28 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "login.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 17:49:28 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_uk.ftlh"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "userList.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:08:58 DEBUG cache:45 - "userList.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_uk.ftlh"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "parts/common.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_uk.ftl"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "spring.ftl"("uk", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_uk.ftlh"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:08:58 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_uk.ftlh"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:08:58 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("uk", UTF-8, parsed); will try to load it.
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_uk.ftlh"): Not found
+2020-11-03 18:08:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:08:58 DEBUG cache:45 - Loading template for "parts/security.ftlh"("uk", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:08:58 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:08:58 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:16:36 DEBUG cache:45 - Couldn't find template in cache for "greeting.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en_US.ftlh"): Not found
+2020-11-03 18:16:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting_en.ftlh"): Not found
+2020-11-03 18:16:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("greeting.ftlh"): Found
+2020-11-03 18:16:36 DEBUG cache:45 - Loading template for "greeting.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\greeting.ftlh"
+2020-11-03 18:16:37 DEBUG cache:45 - "greeting.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:16:37 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:16:37 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:16:37 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:16:37 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:16:37 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:16:37 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:16:37 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:16:37 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:16:37 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:16:37 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:16:37 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:16:37 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:16:37 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:16:37 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:16:37 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_uk.ftlh"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "userList.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\userList.ftlh hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - "userList.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_uk.ftlh"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "parts/common.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\common.ftlh hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_uk.ftl"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed): using cached since jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_uk.ftlh"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\loginPart.ftlh hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_uk.ftlh"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "parts/navbar.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\navbar.ftlh hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_uk.ftlh"): Not found
+2020-11-03 18:19:39 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:19:39 DEBUG cache:45 - "parts/security.ftlh"("uk", UTF-8, parsed): using cached since C:\temp\springActivity\target\classes\templates\parts\security.ftlh hasn't changed.
+2020-11-03 18:19:39 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - "spring.ftl"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:19:39 DEBUG cache:45 - "parts/loginPart.ftlh"("uk", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:29:35 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:29:35 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:29:35 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:29:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:29:35 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:29:35 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:29:35 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:32:22 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:32:22 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:32:22 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:32:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:32:22 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:32:22 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:32:22 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:33:32 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:33:32 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:33:32 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:33:32 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:33:32 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:33:32 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:33:32 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:35:36 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:35:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:35:36 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:35:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:35:36 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:35:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:35:36 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:36:03 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:36:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:36:03 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:36:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:36:03 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:36:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:03 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:35 DEBUG cache:45 - Couldn't find template in cache for "userList.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en_US.ftlh"): Not found
+2020-11-03 18:36:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList_en.ftlh"): Not found
+2020-11-03 18:36:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("userList.ftlh"): Found
+2020-11-03 18:36:35 DEBUG cache:45 - Loading template for "userList.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\userList.ftlh"
+2020-11-03 18:36:36 DEBUG cache:45 - "userList.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:36 DEBUG cache:45 - Couldn't find template in cache for "parts/common.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en_US.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common_en.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/common.ftlh"): Found
+2020-11-03 18:36:36 DEBUG cache:45 - Loading template for "parts/common.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\common.ftlh"
+2020-11-03 18:36:36 DEBUG cache:45 - Couldn't find template in cache for "spring.ftl"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en_US.ftl"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring_en.ftl"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("spring.ftl"): Found
+2020-11-03 18:36:36 DEBUG cache:45 - Loading template for "spring.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/User/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar!/org/springframework/web/servlet/view/freemarker/spring.ftl"
+2020-11-03 18:36:36 DEBUG cache:45 - Couldn't find template in cache for "parts/loginPart.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en_US.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart_en.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/loginPart.ftlh"): Found
+2020-11-03 18:36:36 DEBUG cache:45 - Loading template for "parts/loginPart.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\loginPart.ftlh"
+2020-11-03 18:36:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:36 DEBUG cache:45 - Couldn't find template in cache for "parts/navbar.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en_US.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar_en.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/navbar.ftlh"): Found
+2020-11-03 18:36:36 DEBUG cache:45 - Loading template for "parts/navbar.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\navbar.ftlh"
+2020-11-03 18:36:36 DEBUG cache:45 - Couldn't find template in cache for "parts/security.ftlh"("en_US", UTF-8, parsed); will try to load it.
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en_US.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security_en.ftlh"): Not found
+2020-11-03 18:36:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("parts/security.ftlh"): Found
+2020-11-03 18:36:36 DEBUG cache:45 - Loading template for "parts/security.ftlh"("en_US", UTF-8, parsed) from "C:\\temp\\springActivity\\target\\classes\\templates\\parts\\security.ftlh"
+2020-11-03 18:36:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:36 DEBUG cache:45 - "spring.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2020-11-03 18:36:36 DEBUG cache:45 - "parts/loginPart.ftlh"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.

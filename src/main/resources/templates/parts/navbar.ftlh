@@ -16,10 +16,10 @@
                    aria-expanded="false"><@spring.message "nav.language"/></a>
                 <div class="collapse" id="collapseExample">
                     <a class="nav-link" href="?lang=uk">
-                        <img src="/static/img/ua.gif" alt="ua_img">
+                        <img src="/static/img/ua.gif" alt="ua_img"/>
                     </a>
                     <a class="nav-link" href="?lang=en">
-                        <img src="/static/img/en.gif" alt="en_img">
+                        <img src="/static/img/en.gif" alt="en_img"/>
                     </a>
                 </div>
             </li>

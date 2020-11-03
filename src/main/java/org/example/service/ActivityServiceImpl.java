@@ -43,7 +43,7 @@ public class ActivityServiceImpl implements ActivityService {
     }
     @Transactional
     @Override
-    public void setTimeActivityById(Integer id, Integer time) {
+    public void setTimeActivityById(Long id, Integer time) {
         Activity activity = activityRepo.findActivityById(id);
         activity.setTime(time);
         activity.setActiveAct(false);
@@ -59,7 +59,7 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Transactional
     @Override
-    public void activateActivityByAdmin(Integer id, String additionalUser, String tag) {
+    public void activateActivityByAdmin(Long id, String additionalUser, String tag) {
         Activity activity = activityRepo.findActivityById(id);
         User addedUser = null;
         if (!StringUtils.isEmpty(additionalUser)){

@@ -132,7 +132,7 @@ public class AdminController {
     @PostMapping("activateActivity")
     public String activateActivity(@RequestParam(required = false) String editTagAct,
                                    @RequestParam(required = false) String additionalUsername,
-                                   @RequestParam Integer activityId
+                                   @RequestParam Long activityId
     ) {
         activityService.activateActivityByAdmin(activityId, additionalUsername, editTagAct);
         return "redirect:/adminCab/activities";

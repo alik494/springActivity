@@ -4,10 +4,12 @@ import org.example.domain.Activity;
 import org.example.domain.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ActivityRepo extends CrudRepository<Activity, Long> {
-    Activity findActivityById(Integer id);
+//    @Query("SELECT u from Activity u where u.id = ?1")
+    Activity findActivityById(Long id);
 
     Iterable<Activity> findActivityByTagAndActiveActFalseAndArchiveActFalse(String tag);
 

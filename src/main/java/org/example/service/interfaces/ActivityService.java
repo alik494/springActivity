@@ -13,11 +13,11 @@ public interface ActivityService {
 
     void addNewActByUser(Activity activity);
 
-    void setTimeActivityById(Integer id, Integer time);
+    void setTimeActivityById(Long id, Integer time);
 
     void addNewActByUserWithAddUser(Activity activity, String additionalUser);
 
-    void activateActivityByAdmin(Integer id, String additionalUser, String tag);
+    void activateActivityByAdmin(Long id, String additionalUser, String tag);
 
     Page<Activity> showAllArchiveActivities(Pageable pageable);
 

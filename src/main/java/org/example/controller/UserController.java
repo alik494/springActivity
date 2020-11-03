@@ -79,7 +79,7 @@ public class UserController {
     @PostMapping("/sendTime")
     public String sendTime(
             @AuthenticationPrincipal User user,
-            @RequestParam Integer activityId,
+            @RequestParam Long activityId,
             @RequestParam String time,
             Model model) {
         int timeInt;
